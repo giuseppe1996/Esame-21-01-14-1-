@@ -1,0 +1,5 @@
+﻿  Esame 21-01-14.cpp
+Esame 21-01-14.obj : error LNK2019: riferimento al simbolo esterno "void __cdecl leggi_mat(char const * const,int &,int (* const)[50])" (?leggi_mat@@YAXQBDAAHQAY0DC@H@Z) non risolto nella funzione _main
+Esame 21-01-14.obj : error LNK2019: riferimento al simbolo esterno "bool __cdecl controllo_mat(int,int const (* const)[50])" (?controllo_mat@@YA_NHQAY0DC@$$CBH@Z) non risolto nella funzione _main
+Esame 21-01-14.obj : error LNK2019: riferimento al simbolo esterno "struct tipo_punto_sella __cdecl trova_punto_sella(int const (* const)[50],int)" (?trova_punto_sella@@YA?AUtipo_punto_sella@@QAY0DC@$$CBHH@Z) non risolto nella funzione _main
+C:\Users\Nello\Desktop\Programmazione\Esame 21-01-14\Debug\Esame 21-01-14.exe : fatal error LNK1120: 3 esterni non risolti

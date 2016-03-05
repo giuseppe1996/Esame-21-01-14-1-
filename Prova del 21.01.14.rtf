@@ -1,0 +1,192 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1138\cocoasubrtf510
+{\fonttbl\f0\froman\fcharset0 TimesNewRomanPSMT;\f1\fswiss\fcharset0 ArialNarrow;\f2\fmodern\fcharset0 Courier-Bold;
+\f3\fmodern\fcharset0 Courier;}
+{\colortbl;\red255\green255\blue255;}
+\paperw11900\paperh16840\vieww17980\viewh15320\viewkind0
+\deftab708
+\pard\pardeftab708\qc
+
+\f0\b\fs28 \cf0 Modulo di Fondamenti di Informatica (9 CFU)\
+
+\fs24 Prova del 21/01/2014 - n. 1\
+per allievi CdL Ingegneria Informatica
+\b0 \
+
+\b Prof. C. Sansone (durata: 1 ora e mezza)\
+\pard\pardeftab708\qj
+
+\b0 \cf0 \
+
+\fs22 \'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\
+\pard\pardeftab708\qc
+
+\f1\b \cf0 Salvare periodicamente il proprio lavoro. \
+\pard\pardeftab708\qj
+
+\f0\b0 \cf0 \'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\'b0\
+\pard\pardeftab708\qc
+
+\i\b\fs32 \cf0 \
+\pard\pardeftab708\qc
+
+\fs24 \cf0 Testo della prova\
+\pard\pardeftab708\qj
+
+\i0\b0 \cf0 \
+\pard\pardeftab708
+
+\f1\fs48 \cf0 Sia data una matrice quadrata 
+\b M
+\b0  di interi positivi memorizzata in un file di testo (
+\b Mat.txt
+\b0 ), che contiene nella prima riga il riempimento  (
+\b riemp
+\b0 )
+\b  
+\b0 e nelle successive gli elementi della matrice (come illustrato negli esempi che seguono). Si ipotizzi che gli elementi della matrice contengano tutti valori diversi.
+\f0 \
+\pard\pardeftab720\sa240
+
+\f1 \cf0 Il \'93punto di sella\'94 di una matrice quadrata \'e8 definito come l\'92elemento minimo della riga e massimo della colonna a cui appartiene. Nel caso in cui tutti i valori della matrice sono diversi, il punto di sella, 
+\i se esiste
+\i0 , \'e8 unico.\
+\pard\pardeftab708
+\cf0 Si progettino (almeno) tre funzioni:\
+- 
+\b leggi_mat,
+\b0  che legge da file il riempimento ed i valori di una matrice quadrata di interi positivi;
+\f0 \
+
+\f1 - 
+\b calc_ind_min, 
+\b0 che riceve in ingresso un vettore e
+\b  
+\b0 restituisce come parametro di uscita 
+\b l'indice
+\b0  del valore minimo in esso contenuto;\
+- 
+\b trova_punto_sella, 
+\b0 che riceve in ingresso una matrice quadrata 
+\b M
+\b0  ed il suo riempimento e, sfruttando (almeno) la funzione 
+\b calc_ind_min
+\b0 , restituisce come parametro d'uscita una struttura contenente due campi: un campo booleano (
+\b sella
+\b0 ) che indica se esiste o meno il punto di sella ed un campo di tipo intero (
+\b val
+\b0 ) che rappresenta il valore del punto di sella. Nel caso in cui il punto di sella non esiste (e quindi 
+\b sella
+\b0  \'e8 uguale a 
+\b false
+\b0 ) il valore 
+\b val
+\b0  sar\'e0 indefinito. La funzione 
+\b trova_punto_sella 
+\b0 pu\'f2 anche utilizzarne altre, opportunamente definite;\
+e
+\b  
+\b0 si scriva un programma che, utilizzando queste funzioni, legga 
+\b M 
+\b0 da file, verifichi se esista o meno il punto di sella e ne stampi il valore in caso affermativo, o un opportuno messaggio nel caso in cui il punto di sella non esiste (vedi esempi - nel primo il valore del punto di sella \'e8 riportato in grassetto).
+\f0 \
+
+\f1 \
+Il programma dovr\'e0 essere suddiviso in moduli, uno contenente prototipi e dichiarazioni, uno contenente (almeno) le funzioni 
+\b leggi_mat
+\b0 ,  
+\b calc_ind_min
+\b0 , 
+\b trova_punto_sella 
+\b0 ed un terzo contenente il 
+\i main
+\i0 .
+\f0\fs24 \
+\pard\pardeftab708\qj
+
+\f1\fs22 \cf0 \
+\pard\pardeftab708
+
+\f0\b\fs20 \cf0 ---------------------------------------------------------------------------------------------------------------------------\
+\pard\pardeftab708\qc
+
+\i\fs24 \cf0 Esempi\
+\pard\pardeftab708
+\cf0 INPUT
+\b0 :
+\i0 \
+\pard\pardeftab708
+
+\f2\b\fs22 \cf0 Mat.txt\
+\pard\pardeftab708
+
+\f3\b0 \cf0 4 \
+\pard\pardeftab708
+
+\fs24 \cf0  
+\fs22 2 17 19 22  
+\fs24 \
+\pard\pardeftab708
+
+\fs22 \cf0  3 20  7  9  \
+\pard\pardeftab708
+
+\fs24 \cf0 25
+\fs22  
+\f2\b 23
+\f3\b0  32 40  
+\fs24 \
+\pard\pardeftab708
+
+\fs22 \cf0 13 21 27 39 \
+\pard\pardeftab708
+
+\f0\b\fs24 \cf0 \
+
+\i OUTPUT
+\b0 :
+\i0  \
+\pard\pardeftab708
+
+\f2\b\fs22 \cf0 Punto di sella: 23\
+\pard\pardeftab708
+
+\f0\b0\fs24 \cf0 \
+\
+
+\i\b INPUT
+\b0 :
+\i0 \
+\pard\pardeftab708
+
+\f2\b\fs22 \cf0 Mat.txt\
+\pard\pardeftab708
+
+\f3\b0 \cf0 4 \
+\pard\pardeftab708
+
+\fs24 \cf0  
+\fs22 1  6  6  4  
+\fs24 \
+\pard\pardeftab708
+
+\fs22 \cf0  7 18  4  2  \
+\pard\pardeftab708
+
+\fs24 \cf0  
+\fs22 1  2 13  7  
+\fs24 \
+\pard\pardeftab708
+
+\fs22 \cf0 12  4  3  7  \
+\pard\pardeftab708
+
+\f0\b\fs24 \cf0 \
+
+\i OUTPUT
+\b0 :
+\i0 \
+\pard\pardeftab708
+
+\f2\b\fs22 \cf0 La matrice non ha un punto di sella
+\f0\b0 \
+}
